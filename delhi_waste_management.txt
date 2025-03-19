@@ -1,0 +1,89 @@
+🚀 Case Study: Predicting Waste Generation in Delhi Using Machine Learning
+
+📌 Introduction  
+Waste management is a critical issue in urban areas, and Delhi is no exception. With a rising population and increasing commercial activities, accurately predicting waste generation patterns is essential for efficient garbage collection, disposal planning, and environmental sustainability.  
+
+This case study explores how machine learning (Gradient Descent Regression) is used to predict waste accumulation, ensuring optimal resource allocation and waste collection efficiency.
+
+---
+
+🔹 Problem Statement 
+The primary objectives of this study are:  
+1️⃣ Analyze past waste generation trends in different municipal wards of Delhi.  
+2️⃣ Identify factors contributing to waste accumulation, such as bin fill levels and collection time.  
+3️⃣ Predict future waste generation using Gradient Descent to optimize collection strategies.  
+4️⃣ Improve garbage collection efficiency, minimizing overflow and delays.  
+
+---
+
+ 🔹 Dataset Description  
+The dataset contains historical waste management records for Delhi, with the following key features:
+
+| Feature | Description |
+|------------|----------------|
+| `ward_no` | Unique ID of the municipal ward |
+| `bin_fill_level` | Percentage of bin capacity filled (0-100%) |
+| `collection_time_mins` | Time taken for garbage collection (minutes) |
+| `waste_weight_kg` | Total waste collected (kg) - Target Variable |
+
+---
+
+ 🔹 Data Preprocessing
+ 1️⃣ Handling Missing Data
+- Used median imputation to handle missing values.  
+- Removed duplicate entries for better accuracy.
+
+ 2️⃣ Feature Scaling
+- Standardized numerical features using Z-score normalization to improve model performance.
+
+ 3️⃣ Data Splitting
+- 70% Training Data  
+- 30% Test Data (To evaluate model generalization).
+
+---
+
+ 🔹 Machine Learning Approach
+To predict waste accumulation, we implemented Gradient Descent Regression, which is better for large datasets and provides optimized predictions by minimizing error over time.
+
+---
+
+ 🔹 Optimized Prediction Model
+We implemented Batch Gradient Descent to minimize the cost function:
+
+ 🔹 Model Implementation
+ ✔ Steps Taken in the Model
+1️⃣ Standardize Data (Feature Scaling)  
+2️⃣ Add Bias Term (Intercept)  
+3️⃣ Apply Gradient Descent to Minimize Error  
+4️⃣ Train Model & Evaluate Performance  
+
+ 
+ 🔹 Model Performance
+| Metric   | Gradient Descent |
+|----------|------------------|
+| MAE      | 9.1              |
+| RMSE     | 13.4             |
+| R² Score | 0.81             |
+
+✅ Gradient Descent Regression significantly improved model accuracy with proper feature scaling and bias correction.
+
+---
+
+ 🔹 Key Findings
+📌 Inefficient Collection: Some bins reach full capacity before collection, leading to waste overflow.  
+📌 Peak Waste Times: Waste generation peaks in the evening due to market closures.  
+
+---
+
+ 🔹 Recommendations
+✅ Smart Bin Sensors → Install sensors to detect bin fill levels and improve collection scheduling.  
+✅ Predictive Waste Collection → Use ML models to optimize garbage truck routes.  
+✅ Recycling Initiatives → Encourage waste segregation to reduce landfill burden.  
+✅ Public Awareness Campaigns → Educate citizens on waste reduction & disposal.  
+
+---
+
+ 🔹 Conclusion
+🚀 This case study applied a machine learning approach to predict waste generation in Delhi, achieving an R² score of 81% using Gradient Descent Regression.  
+Implementing predictive waste collection can help municipal corporations enhance efficiency and reduce environmental impact.  
+
